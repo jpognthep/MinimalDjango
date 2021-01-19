@@ -7,6 +7,6 @@ def AppHello(request,name = "Everyone"):
     return HttpResponse("Hello %s"%name)
 
 def AddTask(request,task):
-    NewTask = Todo.objects.create(name = task)
+    NewTask = Todo.objects.create(TaskName = task)
     NewTask.save()
     return HttpResponse("Task %s saved"%task)
