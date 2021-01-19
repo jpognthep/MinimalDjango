@@ -20,6 +20,6 @@ from App.views import AppHello, AddTask
 urlpatterns = [
     path('admin/', admin.site.urls),
 #    path('hello/<str:name>',AppHello, name = 'AppHellos')
-    path('hello/',AppHello, name = 'AppHellos')
+    path('hello/',AppHello, name = 'AppHellos'),
     path('addtask/<str:task>',AddTask, name = 'AddTask')
 ]
